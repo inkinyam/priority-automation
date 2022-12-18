@@ -57,10 +57,24 @@
   max-width: 940px;
   width: 100%;
   height: auto;
-  margin: 90px auto;
+  margin: 0 auto  45px;
 
   @media screen and (max-width: 550px) {
     margin: 60px auto 0;
   
   }
+}
+
+
+.lead__sertificate-info {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  max-width: 100%;
+  margin: 0 auto  45px;
+}
+
+.lead__sertificate-img {
+  width: 60px;
+  fill: var(--accent1);
 }

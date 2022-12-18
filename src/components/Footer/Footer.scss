@@ -19,35 +19,12 @@
 }
 
 
-.footer__nav {
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  list-style: none;
+.footer__info{
+  color: #fff;;
   padding: 0;
   margin: 0;
 }
 
-.footer__item {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  margin: 0;
-  padding: 0;
-  color: var( --neutral);
-  transition: color 0.3s ease-in-out;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  &:hover {
-    color: #fff;
-  }
-}
 
 .footer__copyright {
   padding: 0;

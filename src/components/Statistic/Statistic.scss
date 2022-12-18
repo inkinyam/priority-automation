@@ -23,15 +23,19 @@
 .statistic__cards {
   display: flex;
   flex-direction: row;
-  column-gap: 20px; 
+  column-gap: 60px; 
 
   @media screen and (max-width: 1000px) {
     max-width: 90%;
     margin: 0 auto;
     flex-direction: column;
    }
- 
+ }
 
+ .statistic__card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33% - 30px);  
 }
 
 .statistic__number {
@@ -41,7 +45,8 @@
   font-size: 36px;
   line-height: 43px;
   color: var(--accent1);
-  margin: 0 0 20px;
+  margin: 0;
+  min-height: 130px;
 }
 
 .statistic__description {
