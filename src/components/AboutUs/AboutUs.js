@@ -5,11 +5,11 @@ const AboutUs = () => {
     <section className="aboutUs">
       <div className="aboutUs__info">
         <div className="aboutUs__info-box">
-          <h3 className="aboutUs__info-title">Помогаем с автоматизацией процессов в 1С</h3>
-          <small className="aboutUs__substring">Trends</small>
+          <h3 className="aboutUs__info-title">Мы — команда квалифицированных специалистов. Помогаем бизнесу с автоматизацией учетных процессов при помощи 1С</h3>
+          {/* <small className="aboutUs__substring">Trends</small> */}
         </div>
         <div className="aboutUs__info-desription">
-          <p>Предоставляем комплексные решения для производственных и торговых компаний. Занимаемся программированием и сопровождением 1С. </p>
+          <p>Специализируемся на разработке с нуля и доработке уже существующих решений для торговых компаний. Занимаемся программированием, оптимизацией и сопровождением.</p>
         </div>
 
       </div>

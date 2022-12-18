@@ -20,7 +20,7 @@ const Form =() => {
       <form className="form">
         <fieldset className="form__titleblock">
           <div>
-            <h2 className="form__title">Что Вы ищете?</h2>
+            <h2 className="form__title">Связаться с нами</h2>
             <p className="form__subtitle">Чем больше вы работаете, тем больше получаете</p>
           </div>
           <button type="submit" className="form__submit accent-button">Отправить</button>
