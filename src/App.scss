@@ -1,0 +1,63 @@
+// ------------------------------------------ colors ---------------------------------------
+$text:      #363940;
+$primary-color: #18A3EE;
+$secondary: #FC8823;
+$neutral:   #95A1BB;
+
+// ------------------------------------------ imports --------------------------------------
+@import 'animate.css';
+@import '~loaders.css/src/animations/ball-pulse.scss';
+
+
+
+// ------------------------------------------ fonts ----------------------------------------
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Inter-Regular.woff2?v=3.19") format("woff2"),
+       url("./assets/fonts/Inter-Regular.woff?v=3.19") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/fonts/Inter-Medium.woff2?v=3.19") format("woff2"),
+       url("./assets/fonts/Inter-Medium.woff?v=3.19") format("woff");
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./assets/fonts/Inter-Black.woff2?v=3.19") format("woff2"),
+       url("./assets/fonts/Inter-Black.woff?v=3.19") format("woff");
+}
+
+
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  z-index: 4;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards
+}
