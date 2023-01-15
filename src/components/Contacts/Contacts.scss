@@ -1,0 +1,123 @@
+.Contacts__blocks {
+  display: flex;
+  column-gap: 24px;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+
+.form {
+  width: calc(50% - 12px);
+  margin-top: auto;
+  margin-bottom: auto;
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.form__half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email']{
+    width: 100%;
+    border: 0;
+    background: white;
+    color: #363940;
+    border: 1px solid #363940;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    
+    &:focus, :hover, :active {
+      outline: none;
+      border: 1px solid #18A3EE;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: white;
+    color: #363940;
+    border: 1px solid #363940;
+    height: 50px;
+    font-size: 16px;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+
+    &:focus, :hover, :active {
+      outline: none;
+      border: 1px solid #18A3EE;;
+    }
+  }
+}
+
+.map__description {
+  position: absolute;
+  background: #3c3f41;
+  border-radius: 4px;
+  top: 25px;
+  right: 25%;
+  z-index: 9;
+  width: 280px;
+  padding: 20px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+  
+  span {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    color: #18A3EE;
+  }
+}
+
+.map__wrapper {
+  background: rgba(8, 217, 216, 0.1);
+  float: right;
+    width: calc(50% - 12px);
+  height: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}

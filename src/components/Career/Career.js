@@ -5,7 +5,7 @@ const Career = () => {
   return (
     <>
       <div className='container career'>
-        <div className='home'>Career</div>  
+      <h1 className='title'><span>В</span>акансии</h1>  
       </div>
       <Loader type="ball-pulse"/>
     </>

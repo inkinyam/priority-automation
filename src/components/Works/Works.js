@@ -5,7 +5,8 @@ const Works = () => {
   return (
     <>
     <div className='container Works'>
-      <div className='home'>Works</div>  
+      <h1 className='title'><span>р</span>азработки</h1>  
+
     </div>
     <Loader type="ball-pulse"/>
     </>

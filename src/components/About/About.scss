@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  background-color: #F6F7FA;
   box-sizing: border-box;
   padding: 0 5%;
 
@@ -35,6 +34,21 @@
 
   .about__sertificates-info {
     margin: 4px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    
+    @media screen and (max-width: 1239px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  
+    @media screen and (max-width: 800px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }
 
@@ -46,8 +60,14 @@
   color: #363940;
   margin: 0 0 16px;
 
+  @media screen and (max-width: 1239px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
   @media screen and (max-width: 1000px) {
-    
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -58,22 +78,39 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+
+  @media screen and (max-width: 1239px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 
 .statistic {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   column-gap: 16px;
   width: 100%;
   margin: 30px 0 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .statistic__img {
   width: 100%;
   max-width: calc(50% - 10px);
-  height: auto;
   object-fit: cover;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .statistic__card {
@@ -98,6 +135,16 @@
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 8px;
+  
+  @media screen and (max-width: 1239px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .statistic__card-text{
@@ -107,6 +154,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  
+  @media screen and (max-width: 1239px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .statistic__card {
