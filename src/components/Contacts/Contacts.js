@@ -75,8 +75,8 @@ const Contacts = () => {
             <br />
             <span>mail@mail.ru</span>
           </div>
-
       </div>
+      <Loader type="ball-pulse"/>
     </>
   )
 }

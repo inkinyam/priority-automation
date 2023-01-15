@@ -2,7 +2,7 @@ import "./Sidebar.scss";
 import Logo from '../../assets/img/Logo.svg';
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHome, faCircleInfo, faCircleDollarToSlot, faCopyright, faLaptop, faUserTie} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHome, faCircleInfo, faCircleDollarToSlot, faLaptop, faUserTie} from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   const navLinkClassnames =  ({isActive}) => isActive ? 'navbar__link navbar__link_active': 'navbar__link';

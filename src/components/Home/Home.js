@@ -18,7 +18,7 @@ const Home = () => {
         <Link to='/services' className='button button_services'>Список услуг</Link>
       </div>
 
-      <img src={computer} alt='изображение компьютера' className='home__img'/>
+      <img src='https://statec.com.ua/images/statec/vacancy.jpg' alt='изображение компьютера' className='home__img'/>
      
     </div>
     <Loader type="ball-pulse"/>
