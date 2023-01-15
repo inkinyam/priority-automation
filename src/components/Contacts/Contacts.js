@@ -35,38 +35,28 @@ const Contacts = () => {
 
         <div className='Contacts__blocks'>
           
-            <form className='form' ref={refForm} onSubmit={sendEmail}>
-              <ul>
-                <li className='form__half'>
-                  <input type='text' name='name' placeholder='Name' required/>
-                </li>
+          <form className='form' ref={refForm} onSubmit={sendEmail}>
+            <ul>
+              <li className='form__half'>
+                <input type='text' name='name' placeholder='Имя' required/>
+              </li>
 
-                <li className='form__half'>
-                  <input type='email' name='email' placeholder='E-mail' required/>
-                </li>
+              <li className='form__half'>
+                <input type='email' name='email' placeholder='E-mail' required/>
+              </li>
 
-                <li>
-                  <input placeholder='Subject' type='text' name='subject' required/>
-                </li>
-                <li>
-                  <textarea placeholder="Message" name="message" required></textarea>
-                </li>
+              <li>
+                <input placeholder='Заголовок' type='text' name='subject' required/>
+              </li>
+              <li>
+                <textarea placeholder="Ваше сообщение" name="message" required></textarea>
+              </li>
 
-                <li>
-                  <input type='submit' className='button button_contact' value='Отправить' />
-                </li>
-              </ul>
-            </form>
-         
-      
-
-          <div className='map__description'>
-            ООО "Приорити Автоматизация"
-            <br />
-            Россия, Москва
-            <br />
-            <span>mail@mail.ru</span>
-          </div>
+              <li>
+                <input type='submit' className='button button_contact' value='Отправить' />
+              </li>
+            </ul>
+          </form>
 
           <div className="map__wrapper">
               <MapContainer center={[55.754740, 37.621408]} zoom={13}>
@@ -77,6 +67,14 @@ const Contacts = () => {
               </MapContainer>
           </div>
         </div>
+
+        <div className='map__description'>
+            ООО "Приорити Автоматизация"
+            <br />
+            Россия, Москва
+            <br />
+            <span>mail@mail.ru</span>
+          </div>
 
       </div>
     </>

@@ -15,36 +15,33 @@ const Sidebar = () => {
 
     <nav className="navbar__navigation">
       <NavLink exact="true" className={navLinkClassnames} to="/" dataname="домой">
-        <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faHome} color='#95A1BB' />
       </NavLink>
 
       <NavLink exact="true" className={navLinkClassnames} to="/about" dataname="о нас">
-        <FontAwesomeIcon icon={faCircleInfo} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faCircleInfo} color='#95A1BB' />
       </NavLink>
 
       <NavLink exact="true" className={navLinkClassnames} to="/services" dataname="услуги">
-        <FontAwesomeIcon icon={faCircleDollarToSlot} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faCircleDollarToSlot} color='#95A1BB' />
       </NavLink>
 
       <NavLink exact="true" className={navLinkClassnames} to="/works" dataname="разработки">
-        <FontAwesomeIcon icon={faLaptop} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faLaptop} color='#95A1BB' />
       </NavLink>
 
       <NavLink exact="true" className={navLinkClassnames} to="/career" dataname="вакансии">
-        <FontAwesomeIcon icon={faUserTie} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faUserTie} color='#95A1BB' />
       </NavLink>
       
       <NavLink exact="true" className={navLinkClassnames} to="/contact" dataname="контакты">
-        <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
+        <FontAwesomeIcon icon={faEnvelope} color='#95A1BB' />
       </NavLink>
     </nav>
 
     <ul className="navbar__links">
       <li>
-        <a href="https://github.com/inkinyam" target="_blank" rel="noreferrer"> 
-          <FontAwesomeIcon icon={faCopyright} color='#4d4d4e'/>
-          i_n_k_i
-        </a>
+          г. Москва
       </li>
       <li>
         2022 г.

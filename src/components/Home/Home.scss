@@ -59,7 +59,7 @@
   column-gap: 20px;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 650px) {
     flex-direction: column;
     row-gap: 24px;
   }
@@ -82,6 +82,7 @@
   color: #363940;
   border-radius: 4px;
   box-sizing: border-box;
+  letter-spacing: 1.5px;
 
   transition: all 0.3s ease-in-out;
 
