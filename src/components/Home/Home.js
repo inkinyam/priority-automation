@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Home.scss';
-import computer from '../../assets/img/title.jpg';
 import Loader from 'react-loaders';
 
 const Home = () => {

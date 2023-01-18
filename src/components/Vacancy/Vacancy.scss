@@ -1,0 +1,163 @@
+.vacancy {
+  .button {
+    margin: 24px 0;
+    min-width: 250px;
+    opacity: 0;
+    animation: fadeInUp 1s 1.2s;
+    animation-fill-mode: forwards;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      min-width: none;
+    }
+  }
+}
+
+.vacancy__info {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  max-width: 90%;
+  margin: 0 auto;
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    row-gap: 12px;
+  }
+}
+
+.vacancy__part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  min-width: 20%;
+}
+
+.vacancy__partLine {
+  opacity: 0;
+  animation: fadeInUp 1s 2.1s;
+  animation-fill-mode: forwards;
+
+  &:nth-of-type(2) {
+    animation-delay: 2.4s;
+  }
+
+  &:nth-of-type(3) {
+    animation-delay: 2.7s;
+  }
+
+  &:nth-of-type(4) {
+    animation-delay: 3s;
+  }
+}
+
+.vacancy__description {
+  opacity: 0;
+  animation: fadeInUp 1s 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.vacancy__tag {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #95A1BB;
+  margin: 0 0 6px;
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
+
+.vacancy__accenttext {
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+
+  @media screen and (max-width: 1239px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+}
+
+.vacancy__text {
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media screen and (max-width: 1239px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.vacancy__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #363940;
+  margin: 20px 0 16px;
+
+  @media screen and (max-width: 1239px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.vacancy__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.vacancy__blocks {
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+
+  @media screen and (max-width: 800px) {
+    row-gap: 24px;
+    margin-top: 24px;
+  }
+}
+
+.vacancy__block {
+  width: 100%;
+
+  opacity: 0;
+  animation: fadeInUp 1s 3.3s;
+  animation-fill-mode: forwards;
+
+  &:nth-of-type(2) {
+    animation-delay: 3.7s;
+  }
+
+  &:nth-of-type(3) {
+    animation-delay: 4s;
+  }
+
+  &:nth-of-type(4) {
+    animation-delay: 4.3s;
+  }
+}

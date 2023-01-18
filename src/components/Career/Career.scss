@@ -1,0 +1,104 @@
+.career__cardlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 40px;
+  column-gap: 40px;
+  padding: 0;
+
+  width: 90%;
+  margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    row-gap: 40px;
+    column-gap: 24px;
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+}
+
+.career__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  opacity: 0;
+  animation: fadeInUp 0.3s ease-out forwards;
+  animation-delay: 1.5s;
+  &:nth-of-type(2) {
+    animation-delay: 1.8s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: 2.1s;
+  }
+}
+
+.career__card-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #363940;
+  margin: 0;
+  min-height: 45px;
+  @media screen and (max-width: 1000px) {
+    min-height: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.career__card-description{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #95A1BB;
+  margin: 0 0 12px;
+}
+
+
+.career__more {
+  font-family: 'Rubik';
+  font-style: normal;
+  text-align: start;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #18A3EE;
+  border:none;
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+  width: 160px;
+  text-decoration: none;
+  margin-top: auto;
+
+  @media screen and (max-width: 800px) {
+    margin-top: auto;
+   }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::after {
+    content: '→';
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 20px;
+    opacity: 0;
+    transition: right 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  &:hover::after {
+    right: -10px;
+    opacity: 1;
+  }
+}

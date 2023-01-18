@@ -32,9 +32,13 @@
       display: block;
       position: relative;
       opacity: 0;
-      animation: fadeInUp 2s 2s;
+      animation: fadeInUp 1s 2s;
       animation-fill-mode: forwards;
       clear: both;
+    }
+
+    &:nth-last-of-type(2) {
+      animation-delay: 2.5s
     }
 
     li.form__half {
@@ -92,6 +96,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
+
 
     &:focus, :hover, :active {
       outline: none;

@@ -4,6 +4,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+  max-height: 100vh;
+    max-width: calc(100vw - 65px);
+    overflow: hidden;
+    margin: 0 0 0 65px;
 } 
 
 .home__title {
@@ -17,7 +22,7 @@
   font-size: 58px;
   line-height: 68px;
   text-align: center;
-  color: #CAD1E1;
+  color: #0d0d0d;
   margin: 80px auto 5px;
   text-align: center;
 
@@ -109,13 +114,14 @@
 }
 
 .home__img {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 
-  filter: grayscale(0.6);
+  filter: blur(12px);
+
 }
