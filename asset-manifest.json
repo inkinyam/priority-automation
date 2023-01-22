@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/priority-automation/static/css/main.b4d0893d.css",
-    "main.js": "/priority-automation/static/js/main.8c7f1ad9.js",
+    "main.css": "/priority-automation/static/css/main.42540f9f.css",
+    "main.js": "/priority-automation/static/js/main.89764488.js",
     "static/js/787.9865fdf7.chunk.js": "/priority-automation/static/js/787.9865fdf7.chunk.js",
-    "static/media/feauturesimg.jpg": "/priority-automation/static/media/feauturesimg.62f4e5b837970cc72340.jpg",
+    "static/media/feauturesimg.jpg": "/priority-automation/static/media/feauturesimg.3cf256835eeec0c54006.jpg",
     "static/media/Inter-Medium.woff?v=3.19": "/priority-automation/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/progr.jpg": "/priority-automation/static/media/progr.6a14e5a4e3d7d773b80f.jpg",
     "static/media/Inter-Black.woff?v=3.19": "/priority-automation/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -11,16 +11,18 @@
     "static/media/Inter-Medium.woff2?v=3.19": "/priority-automation/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
     "static/media/Inter-Black.woff2?v=3.19": "/priority-automation/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
     "static/media/Inter-Regular.woff2?v=3.19": "/priority-automation/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/mobile.jpg": "/priority-automation/static/media/mobile.2ad0921d906d8f6e022f.jpg",
+    "static/media/esb.jpg": "/priority-automation/static/media/esb.93e4b711fc9f75c4ef9f.jpg",
     "static/media/helvetica-neu.ttf": "/priority-automation/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo.png": "/priority-automation/static/media/logo.2072730e2b45a1d092a2.png",
     "static/media/sert.svg": "/priority-automation/static/media/sert.57eab79b54f8b679c2224e4708f9de82.svg",
     "index.html": "/priority-automation/index.html",
-    "static/media/Logo.svg": "/priority-automation/static/media/Logo.0e21fa52164eaf5ccf229a8280675b8e.svg",
-    "main.b4d0893d.css.map": "/priority-automation/static/css/main.b4d0893d.css.map",
-    "main.8c7f1ad9.js.map": "/priority-automation/static/js/main.8c7f1ad9.js.map",
+    "main.42540f9f.css.map": "/priority-automation/static/css/main.42540f9f.css.map",
+    "main.89764488.js.map": "/priority-automation/static/js/main.89764488.js.map",
     "787.9865fdf7.chunk.js.map": "/priority-automation/static/js/787.9865fdf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4d0893d.css",
-    "static/js/main.8c7f1ad9.js"
+    "static/css/main.42540f9f.css",
+    "static/js/main.89764488.js"
   ]
 }
