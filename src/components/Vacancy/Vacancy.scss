@@ -36,7 +36,6 @@
   opacity: 0;
   animation: fadeInUp 1s 2.1s;
   animation-fill-mode: forwards;
-
   &:nth-of-type(2) {
     animation-delay: 2.4s;
   }
@@ -56,68 +55,8 @@
   animation-fill-mode: forwards;
 }
 
-.vacancy__tag {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #95A1BB;
-  margin: 0 0 6px;
-  @media screen and (max-width: 800px) {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0;
-  }
-}
-
-.vacancy__accenttext {
-  margin: 0;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
-
-  @media screen and (max-width: 1239px) {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-
-}
-
-.vacancy__text {
-  margin: 0;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-
-  @media screen and (max-width: 1239px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @media screen and (max-width: 800px) {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-.vacancy__title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  color: #363940;
-  margin: 20px 0 16px;
-
-  @media screen and (max-width: 1239px) {
-    font-size: 24px;
-    line-height: 28px;
-  }
+.vacancy__block-title {
+  margin-bottom: 18px;
 }
 
 .vacancy__list {

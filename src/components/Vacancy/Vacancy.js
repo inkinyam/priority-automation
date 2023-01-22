@@ -13,58 +13,58 @@ const Vacancy = ({title, price, decription,  todo, important, workpoint, expirie
       <div className='vacancy__info'>
         <div className='vacancy__part'>
           <Link to='/contact' className='button button_contact'>Откликнуться</Link>
-          <p className='vacancy__text vacancy__description'>{decription}</p>
+          <p className='card-title vacancy__description'>{decription}</p>
         </div>
 
         <div className='vacancy__part'>
           <div className='vacancy__partLine'>
-            <span className='vacancy__tag'>Зарплата</span>
-            <p className='vacancy__accenttext '>{price}</p>
+            <span className='card-text'>Зарплата</span>
+            <p className='card-title '>{price}</p>
           </div>
           <div className='vacancy__partLine'>
-            <span className='vacancy__tag'>Требуемый опыт</span>
-            <p className='vacancy__accenttext'>{expirience}</p>
+            <span className='card-text'>Требуемый опыт</span>
+            <p className='card-title'>{expirience}</p>
           </div>
           <div className='vacancy__partLine'>
-            <span className='vacancy__tag'>Местоположение</span>
-            <p className='vacancy__accenttext'>{workpoint}</p>
+            <span className='card-text'>Местоположение</span>
+            <p className='card-title'>{workpoint}</p>
           </div>
           <div className='vacancy__partLine'>
-            <span className='vacancy__tag'>Полный рабочий день</span>
-            <p className='vacancy__accenttext'>{workday}</p>
+            <span className='card-text'>Полный рабочий день</span>
+            <p className='card-title'>{workday}</p>
           </div>
         </div>
       </div>
 
       <div className='vacancy__blocks'>
         <div className='vacancy__block'>
-          <h3 className='vacancy__title'>Вам предстоит</h3>
+          <h3 className='block-title vacancy__block-title'>Вам предстоит</h3>
           <ul className='vacancy__list'>
             {todo.map(item => {
               return(
-                <li className='vacancy__listItem vacancy__text' key={item}>{item}</li>
+                <li className='vacancy__listItem card-title' key={item}>{item}</li>
               )
             })}
           </ul>
         </div> 
 
         <div className='vacancy__block'>
-          <h3 className='vacancy__title'>Для нас важно</h3>
+          <h3 className='block-title vacancy__block-title'>Для нас важно</h3>
           <ul className='vacancy__list'>
             {important.map(item => {
               return(
-                <li className='vacancy__listItem vacancy__text' key={item}>{item}</li>
+                <li className='vacancy__listItem card-title' key={item}>{item}</li>
               )
             })}
           </ul>
         </div>
 
         <div className='vacancy__block'>
-          <h3 className='vacancy__title'>Мы предлагаем</h3>
+          <h3 className='block-title vacancy__block-title'>Мы предлагаем</h3>
           <ul className='vacancy__list'>
             {offer.map(item => {
               return(
-                <li className='vacancy__listItem vacancy__text' key={item}>{item}</li>
+                <li className='vacancy__listItem card-title' key={item}>{item}</li>
               )
             })}
           </ul>

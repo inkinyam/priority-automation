@@ -1,6 +1,5 @@
 import './Contacts.scss';
 import Loader from 'react-loaders';
-import {MapContainer, Marker, TileLayer, Popup} from 'react-leaflet';
 import React from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -33,9 +32,19 @@ const Contacts = () => {
       <div className='container Contacts'>
         <h1 className='title'><span>К</span>онтакты</h1>  
 
-        <div className='Contacts__blocks'>
-          
-          <form className='form' ref={refForm} onSubmit={sendEmail}>
+        <div className='Contacts__contacts'>
+          <div className='Contacts__contact'>
+            <span className='card-text'>Телефон</span>
+            <a href='tel:7-499-404-20-86' className='card-title'>+7-499-404-20-86</a>
+          </div>
+
+          <div className='Contacts__contact'>
+            <span className='card-text'>E-mail</span>
+            <a href='mailto:info@p-automation.ru' className='card-title'>info@p-automation.ru</a>
+          </div>
+
+        </div>
+        <form className='form' ref={refForm} onSubmit={sendEmail}>
             <ul>
               <li className='form__half'>
                 <input type='text' name='name' placeholder='Имя' required/>
@@ -58,23 +67,7 @@ const Contacts = () => {
             </ul>
           </form>
 
-          <div className="map__wrapper">
-              <MapContainer center={[55.754740, 37.621408]} zoom={13}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position={[55.754740, 37.621408]}>
-                  <Popup>ООО "Приорити Автоматизация"</Popup>
-                </Marker>
-              </MapContainer>
-          </div>
-        </div>
 
-        <div className='map__description'>
-            ООО "Приорити Автоматизация"
-            <br />
-            Россия, Москва
-            <br />
-            <span>mail@mail.ru</span>
-          </div>
       </div>
       <Loader type="ball-pulse"/>
     </>

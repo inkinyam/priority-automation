@@ -12,9 +12,10 @@
 }
 
 .form {
-  width: calc(50% - 12px);
+  width: 50%;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 5%;
 
   @media screen and (max-width: 1000px) {
     width: 100%;
@@ -157,4 +158,21 @@
   opacity: 0;
   animation: backInRight 1s 1.2s;
   animation-fill-mode: forwards;
+}
+
+.Contacts__contacts {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  width: 100%;
+  margin: 40px auto;
+  column-gap: 40px;
+
+}
+
+.Contacts__contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  min-width: 200px;
 }
