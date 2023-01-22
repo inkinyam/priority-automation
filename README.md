@@ -1,13 +1,13 @@
 # Сайт-визитка компании "Приорити Автоматизация"
 
 ### Исользуемые технологии
-react
-react-dom-router
-react-scroll
-animate.css
-html
-препроцессор scss
-emailjs
+- react
+- react-dom-router
+- react-scroll
+- animate.css
+- html
+- препроцессор scss
+- emailjs
 
 ### Основные задачи страницы
 
