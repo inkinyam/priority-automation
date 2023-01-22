@@ -48,16 +48,20 @@
 
 .home__subtitle {
   margin: 0 auto 45px;
-  text-transform: lowercase;
+  font-family: 'Rubik';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: #424343;
+
   font-family: monospace;
   letter-spacing: 2px;
-  max-width: 90%;
+  max-width: 80%;
+
 }
 
 .home__buttons {

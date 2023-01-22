@@ -10,7 +10,7 @@ const Home = () => {
         Приорити
         <span>Автоматизация</span>  
       </h1> 
-      <p className='home__subtitle'>придумай текст такой длины, чтобы он не был длиннее заголовка вооооооооооооооооооооооооот так</p>
+      <p className='home__subtitle'>Автоматизация эффективных операций увеличивает эффективность, автоматизация неэффективных операций увеличивает неэффективность.</p>
 
       <div className='home__buttons'>
         <Link to='/contact' className='button button_contact'>Связаться</Link>

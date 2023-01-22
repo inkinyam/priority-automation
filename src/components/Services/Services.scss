@@ -1,21 +1,21 @@
-.feautures {
+.services {
   display: flex;
   flex-direction: column;
 }
 
-.feautures__img {
+.services__img {
   width: 100%;
   height: auto;
   max-height: 360px;
   object-fit: cover;
-  object-position: center;
+  object-position: bottom;
   @media screen and (max-width: 1000px) {
     max-height: 180px;
     min-height: 180px;
   }
 }
 
-.feautures__cards {
+.services__cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
   }
 }
 
-.feautures__card {
+.services__card {
   display: flex;
   flex-direction: column;
   flex-basis: calc(25% - 15px);
@@ -63,7 +63,7 @@
 
 }
 
-.feutures__title {
+.services__title {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
@@ -80,7 +80,7 @@
   }
 }
 
-.feutures__desciption {
+.services__desciption {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
@@ -91,7 +91,7 @@
 
 }
 
-.featutures__more {
+.services__more {
   font-family: 'Rubik';
   font-style: normal;
   text-align: start;
@@ -107,10 +107,7 @@
   position: relative;
   width: 100px;
   text-decoration: none;
-
-  @media screen and (max-width: 800px) {
-    margin-top: auto;
-   }
+  margin-top: auto;
 
   &:hover {
     cursor: pointer;

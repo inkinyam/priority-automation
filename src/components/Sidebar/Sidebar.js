@@ -1,5 +1,5 @@
 import "./Sidebar.scss";
-import Logo from '../../assets/img/Logo.svg';
+import Logo from '../../assets/img/logo.png';
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faCircleInfo, faCircleDollarToSlot, faLaptop, faUserTie} from "@fortawesome/free-solid-svg-icons";
@@ -44,7 +44,7 @@ const Sidebar = () => {
           г. Москва
       </li>
       <li>
-        2022 г.
+        2023 г.
       </li>
 
     </ul>
