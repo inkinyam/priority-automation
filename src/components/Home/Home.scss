@@ -49,7 +49,6 @@
 
 .home__subtitle {
   margin: 0 auto 45px;
-  font-family: 'Rubik';
   font-style: normal;
   text-align: center;
   font-weight: 400;
@@ -81,7 +80,7 @@
   display: inline-block;
   width: 194px;
   height: 46px;
-  font-family: 'Helvetica Neue';
+  font-family: "Rubik";
   font-size: 12px;
   line-height: 46px;
   text-align: center;
@@ -116,12 +115,25 @@
       color: white;
     }
   }
+
+ &.button_disabled {
+  border: none;
+  background-color: #e0dfdff1;
+  color:#505050;
+  
+
+  &:hover {
+    pointer-events: none;
+    cursor:unset;
+  }
+ } 
 }
 
 .home__img {
-  width: 110%;
-  height: 110%;
+  width: 120%;
+  height: 120%;
   object-fit: cover;
+  object-position: top;
   position: absolute;
   top: 0;
   left: 0;

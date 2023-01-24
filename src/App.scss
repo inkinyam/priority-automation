@@ -46,6 +46,22 @@ $neutral:   #95A1BB;
        url("./assets/fonts/Inter-Black.woff?v=3.19") format("woff");
 }
 
+@font-face {
+  font-family: 'Rubik';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./assets/fonts/Rubik-Bold.ttf") format("truetype");
+}
+
 
 .loader-active {
   display: block;
