@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className='about__sertifitates'>
           <img src={sertificate} alt='сертификаты' className='about__img'/>
-          <p className='block-text'>Наши сотрудники получили более 40 сертификатов 1C</p>
+          <p className='block-text'>Наши сотрудники получили более 15 сертификатов 1C</p>
         </div>
       </div>
     
