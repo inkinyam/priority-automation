@@ -1,7 +1,7 @@
 import Vacancy from "./Vacancy";
 
 
-const Consultant = () => {
+const Junior = () => {
   return (
     
     <Vacancy title      = {{first:'1C-разработчик', second: ', junior'}} 
@@ -23,4 +23,4 @@ const Consultant = () => {
   )
 }
 
-export default Consultant;
+export default Junior;

@@ -10,6 +10,7 @@ const Contacts = () => {
   const [isValid, setIsValid] = React.useState(false);
   const [messageText, setMessageText] = React.useState('');
   const [isMessageShow, setIsMessageShow] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
   const refForm = React.useRef();
 
   React.useEffect(() => {
@@ -28,18 +29,18 @@ const Contacts = () => {
         refForm.current,
         '_JaCQQyUixzYhEE91'
       )
-      .then(
+      .then (
         () => {
           setMessageText('Спасибо, мы получили Ваше сообщение о ответим Вам в ближайшее время');
           setIsMessageShow(true);
-          window.location.reload(false);
+          setIsLoading(true);
         },
         () => {
           setMessageText('Что-то пошло не так, пожалуйста, попробуйте позднее снова');
           setIsMessageShow(true);
         }
       )
-
+      
       setTimeout(()=> {
         setMessageText('');
         setIsMessageShow(false);
@@ -49,6 +50,7 @@ const Contacts = () => {
   }
 
 const buttonClassNames = isValid? 'button button_services': 'button button_disabled';
+
 
   return(
     <>
@@ -144,7 +146,7 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
             </fieldset>
 
             <button type='submit' className={buttonClassNames}>Отправить</button>
-
+            
             <p className={`form__message  ${isMessageShow && 'form__message_show'}`}>{messageText}</p>
           </form>
 

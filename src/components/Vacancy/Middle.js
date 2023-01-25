@@ -1,10 +1,10 @@
 import Vacancy from "./Vacancy";
 
 
-const Architector = () => {
+const Middle = () => {
   return (
 
-    <Vacancy title      = {{first:'1C', second: ', middle+'}} 
+    <Vacancy title      = {{first:'1C-разработчик', second: ', middle+'}} 
              price      = {'по договоренности'}
              decription = {'Разыскиваем классного специалиста с серьезным опытом, способного усилить нашу команду.'}
              todo       = {['участие в проектах на позиции старшего разработчика в связке с консультантом;', 
@@ -25,4 +25,4 @@ const Architector = () => {
   )
 }
 
-export default Architector;
+export default Middle;

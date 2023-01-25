@@ -6,9 +6,15 @@
   height: 100vh;
 
   max-height: 100vh;
-    max-width: calc(100vw - 65px);
-    overflow: hidden;
-    margin: 0 0 0 65px;
+  max-width: calc(100vw - 65px);
+  overflow: hidden;
+  margin: 0 0 0 65px;
+
+    @media screen and (max-width: 600px) {
+      margin: 70px auto 0;
+      max-width: 100%;
+      max-height: calc(100vh - 70px);
+    }
 } 
 
 .home__title {
@@ -38,6 +44,7 @@
 
   @media screen and (max-width: 620px) {
    flex-direction: column;
+   color: #fff;
   }
 
   @media screen and (max-width: 370px) {

@@ -21,8 +21,9 @@
   flex-direction: column;
   row-gap: 4px;
 
-  @media screen and (max-width: 1000px) {
-    width: 100%;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    margin-bottom: 40px;
   }
 
   .button {
@@ -45,6 +46,11 @@
   animation: fadeInUp 1s 2s;
   animation-fill-mode: forwards;
 
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    row-gap: 25px;
+    margin: 20px auto;
+  }
 }
 
 .Contacts__contact {
@@ -52,6 +58,8 @@
   flex-direction: column;
   row-gap: 8px;
   min-width: 200px;
+
+
 }
 
 .Contacts__link {
@@ -71,8 +79,12 @@
   position: relative;
   text-decoration: none;
   margin-top: auto;
-}
 
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 
 .form__fieldset {
@@ -92,6 +104,10 @@
   display: flex;
   flex-direction: row;
   column-gap: 12px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
  }
  
  .form__text {
@@ -188,8 +204,27 @@
   font-size: 18px;
   line-height: 24px;
   margin: 20px 0 0;
+  color: #18A3EE;
  }
 
  .form__message_show {
   opacity: 1;
+ }
+
+ .form__buttonbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .loader{
+    display: none;
+    svg path,
+    svg rect{
+      fill: #18A3EE;
+    }
+  }
+
+  &_active {
+    display: block;
+  }
  }

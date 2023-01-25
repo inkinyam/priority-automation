@@ -1,3 +1,8 @@
+.career {
+  display: flex;
+  flex-direction: column;
+}
+
 .career__cardlist {
   display: grid;
   grid-template-columns: 1fr;
@@ -46,5 +51,19 @@
   &:hover::after {
     right: -17px;
     opacity: 1;
+  }
+}
+
+.career__show {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  
+  margin-top: 100px;
+  margin-left: 5%;
+  opacity: 0;
+  animation: fadeInUp 0.3s ease-out 5s forwards;
+  .button {
+    margin-top: 16px;
   }
 }
