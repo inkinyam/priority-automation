@@ -10,7 +10,6 @@ const Contacts = () => {
   const [isValid, setIsValid] = React.useState(false);
   const [messageText, setMessageText] = React.useState('');
   const [isMessageShow, setIsMessageShow] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(false);
   const refForm = React.useRef();
 
   React.useEffect(() => {
@@ -31,12 +30,11 @@ const Contacts = () => {
       )
       .then (
         () => {
-          setMessageText('Спасибо, мы получили Ваше сообщение о ответим Вам в ближайшее время');
+          setMessageText('Спасибо! Мы получили Ваше сообщение, ответим Вам в ближайшее время.');
           setIsMessageShow(true);
-          setIsLoading(true);
         },
         () => {
-          setMessageText('Что-то пошло не так, пожалуйста, попробуйте позднее снова');
+          setMessageText('Что-то пошло не так. Пожалуйста, попробуйте позднее снова.');
           setIsMessageShow(true);
         }
       )
