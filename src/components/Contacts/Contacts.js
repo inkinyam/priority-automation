@@ -54,7 +54,7 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
     <>
       <div className='container Contacts'>
         <h1 className='title'><span>К</span>онтакты</h1>  
-
+      <div className='grid'>
         <div className='Contacts__contacts'>
           <div className='Contacts__contact'>
             <span className='card-text'>Телефон</span>
@@ -66,8 +66,14 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
             <a href='mailto:info@p-automation.ru' className='Contacts__link '>info@p-automation.ru</a>
           </div>
 
+          <div className='Contacts__contact'>
+            <span className='card-text'>Адрес</span>
+            <p  className='Contacts__link'>г. Москва, ул. Академика Короленко, д. 22</p>
+          </div>
+
         </div>
         <form className='form' ref={refForm} onSubmit={sendEmail} noValidate >
+          <h4 className='card-title'>Оставьте Вашу заявку</h4>
           <div className='form__line'>
             <fieldset className='form__fieldset'>
                 <span className='form__text'>Имя</span>
@@ -146,7 +152,17 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
             <button type='submit' className={buttonClassNames}>Отправить</button>
             
             <p className={`form__message  ${isMessageShow && 'form__message_show'}`}>{messageText}</p>
-          </form>
+        </form>
+
+        <div className='info'>
+          <h4 className='card-title'>  Реквизиты компании </h4>
+          <p className='card-text'><strong>Р/с</strong> 1111 2222 3333 4444 5555</p>
+          <p className='card-text'><strong>К/с</strong> 1111 2222 3333 4444 5555</p>
+          <p className='card-text'><strong>в </strong> ПАО "Тинькоф"</p>
+          <p className='card-text'><strong>БИК</strong>  000 444 555</p>
+        </div>
+      </div>
+
 
 
       </div>

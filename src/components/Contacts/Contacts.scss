@@ -1,9 +1,42 @@
+.Contacts {
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: 0 auto;
+    column-gap: 24px;
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+      max-width: 100%;
+    }
+  }
+
+  .info {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 40px 0 0;
+    .card-title {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      grid-column: 1;
+      grid-row: 2;
+      margin: 0;
+    }
+
+  }
+}
+
 .Contacts__blocks {
   display: flex;
   column-gap: 24px;
   flex-direction: row;
   box-sizing: border-box;
   padding: 0 5%;
+  grid-column: 1;
 
 
   @media screen and (max-width: 1000px) {
@@ -13,10 +46,10 @@
 }
 
 .form {
-  width:45%;
+  grid-column: 1;
+  width:100%;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 5%;
   display: flex;
   flex-direction: column;
   row-gap: 4px;
@@ -32,13 +65,18 @@
     animation-fill-mode: forwards;
     clear: both;
   }
+
+  .card-title {
+    margin-bottom: 20px;
+  }
 } 
 
 
 .Contacts__contacts {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  max-width: 90%;
+  row-gap: 20px;
   width: 100%;
   margin: 40px auto;
   column-gap: 40px;
@@ -46,6 +84,10 @@
   animation: fadeInUp 1s 2s;
   animation-fill-mode: forwards;
 
+  @media screen and (max-width: 1000px) {
+    margin: 0 auto;
+  }
+  
   @media screen and (max-width: 700px) {
     flex-direction: column;
     row-gap: 25px;
@@ -228,3 +270,4 @@
     display: block;
   }
  }
+
