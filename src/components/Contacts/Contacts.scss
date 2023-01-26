@@ -17,6 +17,10 @@
     grid-column: 2;
     grid-row: 1;
     margin: 40px 0 0;
+    opacity: 0;
+    animation: fadeInUp 1s 4s;
+    animation-fill-mode: forwards;
+
     .card-title {
       margin-bottom: 24px;
     }
@@ -44,32 +48,6 @@
     row-gap: 40px;
   }
 }
-
-.form {
-  grid-column: 1;
-  width:100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: 4px;
-
-  @media screen and (max-width: 1200px) {
-    width: 90%;
-    margin-bottom: 40px;
-  }
-
-  .button {
-    opacity: 0;
-    animation: fadeInUp 1s 2.7s;
-    animation-fill-mode: forwards;
-    clear: both;
-  }
-
-  .card-title {
-    margin-bottom: 20px;
-  }
-} 
 
 
 .Contacts__contacts {
@@ -128,6 +106,31 @@
   }
 }
 
+.form {
+  grid-column: 1;
+  width:100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    opacity: 0;
+    animation: fadeInUp 1s 2.7s;
+    animation-fill-mode: forwards;
+    clear: both;
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+  }
+} 
 
 .form__fieldset {
   padding: 0;
