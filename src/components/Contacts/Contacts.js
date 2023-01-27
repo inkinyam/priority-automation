@@ -68,7 +68,7 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
 
           <div className='Contacts__contact'>
             <span className='card-text'>Адрес</span>
-            <p  className='Contacts__link'>г. Москва, ул. Академика Короленко, д. 22</p>
+            <p  className='Contacts__link'>129515, Москва г, Академика Королева ул, дом № 13, строение 1, оф.3А/2</p>
           </div>
 
         </div>
@@ -156,10 +156,10 @@ const buttonClassNames = isValid? 'button button_services': 'button button_disab
 
         <div className='info'>
           <h4 className='card-title'>  Реквизиты компании </h4>
-          <p className='card-text'><strong>Р/с</strong> 1111 2222 3333 4444 5555</p>
-          <p className='card-text'><strong>К/с</strong> 1111 2222 3333 4444 5555</p>
-          <p className='card-text'><strong>в </strong> ПАО "Тинькоф"</p>
-          <p className='card-text'><strong>БИК</strong>  000 444 555</p>
+          <p className='card-text'><strong></strong> Общество с ограниченной ответственностью "Приорити Автоматизация"</p>
+          <p className='card-text'><strong>ИНН:</strong> 9717124750</p>
+          <p className='card-text'><strong>КПП:</strong> 771701001</p>
+          <p className='card-text'><strong>ОГРН:</strong> 1227700803879</p>
         </div>
       </div>
 
