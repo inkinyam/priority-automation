@@ -2,13 +2,17 @@
   width: 100%;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 
 .container {
   will-change: contents;
   max-width: calc(100% - 65px);
   width: 100%;
-  margin: 0 0 30px 65px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  margin: 0 0 0 65px;
   height: auto;
   position: relative;
   opacity: 0;
@@ -16,6 +20,8 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+
+ 
 
   @media screen and (max-width: 600px) {
     margin: 90px auto 30px ;

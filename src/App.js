@@ -9,22 +9,21 @@ import Career from './components/Career/Career';
 import Contacts from './components/Contacts/Contacts';
 import Middle from './components/Vacancy/Middle';
 import Junior from './components/Vacancy/Junior';
+import NotFound from './components/404/404';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path='/'           element={<Layout />}>
-          <Route index            element={<Home/>}></Route> 
-          <Route path='/about'    element={<About/>}></Route> 
-          <Route path='/services' element={<Services/>}></Route> 
-          <Route path='/works'    element={<Works/>}></Route> 
-          <Route path='/career'   element={<Career/>}></Route> 
-          <Route path='/contact'  element={<Contacts/>}></Route> 
-          <Route path='/middle'   element={<Middle/>}></Route> 
-          <Route path='/junior'   element={<Junior/>}></Route> 
-         
-        </Route> 
+        <Route path='*'         element={<Layout> <NotFound/> </Layout> } />
+        <Route path='/'         element={<Layout> <Home/> </Layout> } />
+        <Route path='/about'    element={<Layout> <About/> </Layout> } />
+        <Route path='/services' element={<Layout> <Services/> </Layout> } />
+        <Route path='/works'    element={<Layout> <Works/> </Layout> } />
+        <Route path='/career'   element={<Layout> <Career/> </Layout> } />
+        <Route path='/contact'  element={<Layout> <Contacts/> </Layout> } />
+        <Route path='/middle'   element={<Layout> <Middle/> </Layout> } />
+        <Route path='/junior'   element={<Layout> <Junior/> </Layout> } />
       </Routes>
     </>
   );

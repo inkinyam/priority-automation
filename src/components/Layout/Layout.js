@@ -1,14 +1,14 @@
 import "./Layout.scss"
 import Sidebar from "../Sidebar/Sidebar";
-import { Outlet } from "react-router-dom";
 
- const Layout = () => {
+
+ const Layout = ({children}) => {
   return ( 
     <div className="App"> 
       <Sidebar/>
       <div className="page">
-
-         <Outlet/>
+        {children}
+         {/* <Outlet/> */}
     
       </div>
     </div>
