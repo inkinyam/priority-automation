@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/priority-automation/static/css/main.dae6f68c.css",
-    "main.js": "/priority-automation/static/js/main.ee2e96ef.js",
+    "main.css": "/priority-automation/static/css/main.4007be6f.css",
+    "main.js": "/priority-automation/static/js/main.158a8661.js",
     "static/js/787.9865fdf7.chunk.js": "/priority-automation/static/js/787.9865fdf7.chunk.js",
     "static/media/feauturesimg.jpg": "/priority-automation/static/media/feauturesimg.3cf256835eeec0c54006.jpg",
     "static/media/mobile.jpg": "/priority-automation/static/media/mobile.5aa56dd03ee605c4a2e0.jpg",
@@ -19,12 +19,12 @@
     "static/media/logo.png": "/priority-automation/static/media/logo.2072730e2b45a1d092a2.png",
     "static/media/sert.svg": "/priority-automation/static/media/sert.57eab79b54f8b679c2224e4708f9de82.svg",
     "index.html": "/priority-automation/index.html",
-    "main.dae6f68c.css.map": "/priority-automation/static/css/main.dae6f68c.css.map",
-    "main.ee2e96ef.js.map": "/priority-automation/static/js/main.ee2e96ef.js.map",
+    "main.4007be6f.css.map": "/priority-automation/static/css/main.4007be6f.css.map",
+    "main.158a8661.js.map": "/priority-automation/static/js/main.158a8661.js.map",
     "787.9865fdf7.chunk.js.map": "/priority-automation/static/js/787.9865fdf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dae6f68c.css",
-    "static/js/main.ee2e96ef.js"
+    "static/css/main.4007be6f.css",
+    "static/js/main.158a8661.js"
   ]
 }
